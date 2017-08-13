@@ -1,0 +1,23 @@
+#wrapp {
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+    border: 1px solid gray;
+    border-radius: 10px; 
+
+}
+
+#current {
+    width: 90%;
+    height: 70%;
+    border: 3px solid black;
+    margin: 15px;
+}
+
+.thumb{
+    width: 70px;
+    height: 70px;
+    margin: 4px;
+    border: 1px solid red ;
+    border-radius: 10px;
+}

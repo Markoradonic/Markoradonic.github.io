@@ -1,0 +1,18 @@
+
+Posto su nase slike array moramo da se koristimo for loopom
+
+for(var i=0;i<slike.length; i++){
+slike[i].addEventListener('click',display)
+}
+
+- Sve dok je varijabla "i" manja od ovih nasih slika, od duzine nasih slika kazemo i++.
+- Onda smo rekli od nase prve slike a to je sada "i" dodlimo addEventListener (slusaj event) rekli smo da reaguje na "click" i u addEventListener-u smo pozvali funkciju "display" .
+- Zatim smo napravili nasu funkciju 'display'
+
+- Rekli smo da svaka nasa slika koja ima klau thumb reaguje na event "click" a reagovace tako sto ce pozvali funkciju "display"
+
+ - U funkciji "display"  zelimo da se nasa gornja slika promeni u sliku na koju smo kliknuli, zelimo da se "src" nase prve slike promeni samim nasim klikom.
+
+ - Relki smo da nasa prva slika promneni svoj "src" a to smo uradili sa getAttribute('src',sl); a getAttribute zahteva dve vrednosti i moramo da kazemo sta zelimo da postavimo, a selimo da postavimo same slike na koje smo kliknuli, zelimo da postavimo njihov "src".
+
+ - Da bi to uradili moramo da koristimo rec "this" a to znaci ona slika na koju smo kliknuli a to znaci da preko "this" trazimo "src" od slike na koju smo kliknuli
